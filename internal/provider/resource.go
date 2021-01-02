@@ -9,7 +9,7 @@ import (
 
 func resource() *schema.Resource {
 	return &schema.Resource{
-		Description: `The ` + "`null_resource`" + ` resource implements the standard resource lifecycle but takes no further action.
+		Description: `The ` + "`any_resource`" + ` resource implements the standard resource lifecycle but takes no further action.
 
 The ` + "`triggers`" + ` argument allows specifying an arbitrary set of values that, when changed, will cause the resource to be replaced.`,
 
@@ -19,7 +19,7 @@ The ` + "`triggers`" + ` argument allows specifying an arbitrary set of values t
 
 		Schema: map[string]*schema.Schema{
 			"triggers": {
-				Description: "A map of arbitrary strings that, when changed, will force the null resource to be replaced, re-running any associated provisioners.",
+				Description: "A map of arbitrary strings that, when changed, will force the \"any\" resource to be replaced, re-running any associated provisioners.",
 				Type:        schema.TypeMap,
 				Optional:    true,
 				ForceNew:    true,

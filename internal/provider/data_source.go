@@ -9,7 +9,7 @@ import (
 
 func dataSource() *schema.Resource {
 	return &schema.Resource{
-		Description: "The `null_data_source` data source implements the standard data source lifecycle but does not interact with any external APIs.",
+		Description: "The `any_data_source` data source implements the standard data source lifecycle but does not interact with any external APIs.",
 
 		Read: dataSourceRead,
 

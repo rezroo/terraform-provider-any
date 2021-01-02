@@ -1,4 +1,4 @@
-module github.com/terraform-providers/terraform-provider-null
+module github.com/rezroo/terraform-provider-any
 
 require github.com/hashicorp/terraform-plugin-sdk/v2 v2.0.3
 
